@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        display: flex;
+    }
+    .title{
+        position: absolute;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        color: white;
+    }
+   
+        
+    
+</style>
+<body>
+    <div class="title">
+        <h2>Avinash Pingale</h2>
+    </div>
+
+    <div>red</div>
+    <div>yellow</div>
+    <div>blue</div>
+    <button type="button">green color</button>
+    <button type="button">pink color</button>
+    <button type="button">black color</button>
+    <script>
+        let a=prompt("enter a color(yelow/red/blue)")
+        if(a=="yelow"){
+            document.body.style.background="yellow"
+            document.write("you chouse background color :-",a)
+        }
+        else if(a=="red"){
+            document.body.style.background="red"
+            document.write("you chouse background color :-",a)
+        }
+        else if(a=="blue"){
+            document.body.style.background="blue"
+            document.write("you chouse  background color :-",a)
+        }
+        else{
+            document.write("chose this colors only (yelow/red/blue)")
+        } 
+        
+        
+            let x=document.getElementsByTagName('button')[0]
+            x.addEventListener('click',()=>{
+                document.getElementsByTagName('div')[1].style.background="green"
+            })
+            let b=document.getElementsByTagName('button')[1]
+            b.addEventListener('click',()=>{
+             document.getElementsByTagName('div')[2].style.background="pink"
+            })
+            let c=document.getElementsByTagName('button')[2]
+            c.addEventListener('click',()=>{
+             document.getElementsByTagName('div')[3].style.background="black"
+            })
+        </script>
+
+  
+</body>
+</html>
